@@ -1,0 +1,19 @@
+{
+  "name": "attack_of_the_drones",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Aerolab",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "1.1.0",
+    "express": "~4.9.6",
+    "underscore": "~1.7.0",
+    "compress": "~0.99.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-header": "^1.1.1",
+    "gulp-uglify": "^1.0.1"
+  }
+}

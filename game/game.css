@@ -1,0 +1,170 @@
+/* Styles for Attack of the Drones */
+
+#game-holder {
+  position: relative;
+  background: #ffc20d;
+  z-index: 10;
+}
+#game-holder > img {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+#invaders-game {
+  position: relative;
+  background: rgba(255, 194, 13, 0.85);
+}
+#game-score {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  text-align: center;
+  padding: 5px 10px;
+  color: #223F59;
+  font-family: InputMono;
+  border: 2px solid #223F59;
+  z-index: 100;
+  /*background: rgba(255,255,255,0.1);*/
+}
+#game-score-text {
+  font-size: 32px;
+  line-height: 110%;
+  font-weight: bold;
+}
+#game-score .score-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#game-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+#game-progress-bar {
+  box-sizing: border-box;
+  min-width: 70px;
+  width: 0%;
+  height: 12px;
+  padding-right: 4px;
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  font-family: InputMono;
+  background: #E44B3E;
+  white-space: nowrap;
+}
+#game-overlay, #game-over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  font-family: InputMono;
+  background: rgba(255,198,25,0.6);
+  z-index: 200;
+}
+#game-overlay {
+  display: block;
+}
+#game-over {
+  display: none;
+}
+#game-overlay .game-ui-container, #game-over .game-ui-container {
+  box-sizing: border-box;
+  max-width: 399px;
+  margin: 10px auto 0 auto;
+  z-index: 10;
+  background: #ffffff;
+}
+#game-over .game-ui-container {
+  margin-top: 200px;
+}
+.game-signup {
+  display: block;
+}
+.game-signup figure {
+  background: #214760;
+}
+.game-signup figure, .game-signup img {
+  display: block;
+  margin: 0;
+}
+.game-signup form {
+  padding: 20px;
+}
+.game-signup input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  background: url(assets/ui/input.png) no-repeat 10px 10px;
+  border: 2px solid #1e3e55;
+  color: #1e3e55;
+}
+.game-signup button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: #334F6E;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 14px 15px;
+}
+.game-signup button:hover {
+  background: #1e3e55;
+}
+.game-over .game-over-title {
+  background: #213F5A;
+  text-align: left;
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: normal;
+  padding: 10px 15px;
+}
+.game-over .game-over-text {
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: bold;
+  color: #213F5A;
+  text-align: left;
+  padding: 20px 15px 20px 100px;
+  min-height: 100px;
+  background: url(assets/ui/error.png) no-repeat 20px 20px;
+}
+.game-over .game-over-continue {
+  display: block;
+  font-size: 16px;
+  color: #213F5A;
+  background: #ebeff0;
+  padding: 10px 15px;
+}
+
+
+#game-holder.mobile > img {
+  display: none;
+}
+@media(max-width:1024px) {
+  #game-holder > img {
+    display: none;
+  }
+}

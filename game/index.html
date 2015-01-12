@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns#">
+<head>
+  <title>Invaders</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="theme-color" content="#FFC20D" />
+  <link rel="stylesheet" href="game.css" />
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #214760;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="game-holder">
+    <!--
+    <img src="assets/dance/2.gif" height="200" style="left: 20px;" />
+    <img src="assets/dance/3.gif" height="200" style="left: 500px;" />
+    <img src="assets/dance/4.gif" height="200" style="right: 20px;" />
+    -->
+
+    <div id="invaders-game"></div>
+
+    <canvas id="game-controls" style="width:100%; height:100%;position: absolute; top:0;"></canvas>
+
+    <div id="game-score">
+      <div id="game-score-text">0</div>
+      <p>score</p>
+    </div>
+
+    <div id="game-progress">
+      <div id="game-progress-bar">Next Level</div>
+    </div>
+
+    <div id="game-over">
+      <div class="game-ui-container">
+
+        <div class="game-over">
+          <div class="game-over-title">Game Over</div>
+          <div class="game-over-text" id="game-over-text">You are the IE6 of people</div>
+          <div class="game-over-continue">Press Space to Restart</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="game-overlay" style="display:none;">
+      <div class="game-ui-container">
+
+        <div class="game-signup">
+          <figure>
+            <img src="assets/ui/cartridge.png" width="399" height="380" alt="Attack of the Drones" />
+          </figure>
+          <form action="" onsubmit="return tryToStartGame();">
+            <input type="text" name="name" value="" placeholder="Your Superhero name" required />
+            <button type="submit">Play Now!</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Libraries -->
+  <script src="libs/underscore-min.js"></script>
+  <script src="libs/socket.io-1.1.0.js"></script>
+  <script src="libs/phaser.min.js"></script>
+
+  <!-- Game -->
+  <script src="js/globals.js"></script>
+  <script src="js/utilities.js"></script>
+
+  <script src="js/player.management.js"></script>
+  <script src="js/player.controls.js"></script>
+  <script src="js/player.collisions.js"></script>
+  <script src="js/teammates.js"></script>
+
+  <script src="js/enemy.types.js"></script>
+
+  <script src="js/enemies.js"></script>
+
+  <script src="js/scene.js"></script>
+
+  <script src="js/preload.js"></script>
+  <script src="js/create.js"></script>
+
+  <script src="js/game.js"></script>
+  <script src="js/connection.js"></script>
+
+  <script>
+    initGame('', 'assets/');
+    function tryToStartGame() {
+      document.querySelector('#game-overlay').style.display = 'none';
+      startGame( document.querySelector('.game-signup input[name=name]').value );
+
+      return false;
+    };
+
+  </script>
+
+</body>
+</html>
