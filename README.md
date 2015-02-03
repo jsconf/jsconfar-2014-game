@@ -1,7 +1,7 @@
 # Attack of the Drones
 ### Embedded game for the JSConf Argentina 2014 Website
 
-![Attack of the Drones](https://www.jsconfar.com/static/game_assets/ui/cartridge.png)
+![Attack of the Drones](https://github.com/jsconf/jsconfar-2014-game/blob/master/assets/screenshot.png)
 
 
 ## Behind the scenes
