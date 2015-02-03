@@ -1,14 +1,18 @@
 # Attack of the Drones
+
 ### Embedded game for the JSConf Argentina 2014 Website
+
+[Play the Game Online](https://jsconfar.com).
+
 
 ![Attack of the Drones](https://github.com/jsconf/jsconfar-2014-game/blob/master/assets/screenshot.png)
 
 
 ## Behind the scenes
 
-Attack of the Drones (codenamed "Invaders Mini") is the final concept in a set of gameplay experiments for the [JSConf 2014 Site](https://www.jsconfar.com/), and it's basically a top-down invaders game with a multiplayer twist and neat graphics. We tried multiple game mechanics until we arrived at this game, which was both innovative and fun enough to keep people engaged for a few minutes and demonstrate the capabilities of a modern Javascript stack.
+Attack of the Drones (codenamed "Invaders Mini") is the final concept in a set of gameplay experiments for the [JSConf 2014 Site](https://www.jsconfar.com/), and it's basically a top-down invaders game with a multiplayer twist and neat graphics. We tried multiple game mechanics until we arrived at this game, which was both innovative and fun enough to keep people engaged for a few minutes, while demonstrating the capabilities of a modern Javascript stack.
 
-However, as you might expect, this being our first game, coupled with a bunch of discarded concepts and a short deadline resulted in code that's held together with metaphorical duct tape, since it's basically a blend of the 3 concepts we built before we ended up with something we liked. While this shouldn't be considered a source of good game development techniques, here's a quick rundown on how the game works:
+However, as you might expect, this being our first game, coupled with a bunch of discarded concepts and a short deadline resulted in code that's held together with metaphorical duct tape, since it's basically a blend of the 3 concepts we built before we ended up with something we actually liked. While this shouldn't be considered a source of good game development techniques, here's a quick rundown on how the game works:
 
 
 ### The Server
@@ -31,4 +35,13 @@ The game is written on top of Phaser.JS, where we simply control the player and 
 
 ```gulp build```
 
-The server will run on port 4000 by default, though that can be edited in invaders.js .
+The server will run on port 4000 by default, though that can be edited in invaders.js . 
+
+**It's recommended that you download [the full site](https://github.com/jsconf/jsconfar-2014) as well and run the game from the JSConfAr site**. The assets that are delivered by the game server haven't been tested, as the game is meant to be run together with the site and not as a standalone game.
+
+
+## Credits
+
+The JSConfAr Site, Game and Dashboards were developed by [Aerolab](https://aerolab.co).
+
+The music is [Journey - Azureflux Remix](http://freemusicarchive.org/music/McMaNGOS/Piko_Piko_Stereo/09_mcmangos_-_journey__azureflux_remix) by [McMaNGOS](http://mcmangos.bandcamp.com/).
